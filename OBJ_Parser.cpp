@@ -3,7 +3,7 @@
 #include <fstream>
 #include <sstream>
 
-#include "obj_parser.hpp"
+#include "OBJ_Parser.hpp"
 
 using namespace std;
 
