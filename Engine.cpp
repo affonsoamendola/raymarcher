@@ -10,8 +10,6 @@ Engine::Engine()
 		m_input(this),
 		m_raymarcher(this)
 {
-
-	cout << this->m_raymarcher.ss_to_ws(10, 20).x << " " << this->m_raymarcher.ss_to_ws(10, 20).y << " " << this->m_raymarcher.ss_to_ws(10, 20).z << endl;
 }
 
 void Engine::update()

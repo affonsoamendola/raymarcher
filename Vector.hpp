@@ -44,6 +44,8 @@ public:
 	Vector2 operator/(double s);
 	void operator/=(double s);
 
+	double& operator[](int i);
+
 	explicit operator Point2();
 	explicit operator Vector3();
 
@@ -78,6 +80,8 @@ public:
 
 	Vector3 operator/(double s);
 	void operator/=(double s);
+
+	double& operator[](int i);
 
 	explicit operator Point3();
 	

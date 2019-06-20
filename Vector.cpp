@@ -97,6 +97,17 @@ void Vector2::operator/=(double s)
 	this->y /= s;
 }
 
+double& Vector2::operator[](int i)
+{
+	switch(i)
+	{
+		case 0:
+			return this->x;
+		case 1:
+			return this->y;
+	}
+}
+
 #ifdef _FF_POINT_DEF
 //Vector2 -> Point2 Conversion (Explicit)
 Vector2::operator Point2()
@@ -241,6 +252,19 @@ void Vector3::operator/=(double s)
 	this->x /= s;
 	this->y /= s;
 	this->z /= s;
+}
+
+double& Vector3::operator[](int i)
+{
+	switch(i)
+	{
+		case 0:
+			return this->x;
+		case 1:
+			return this->y;
+		case 2:
+			return this->z;
+	}
 }
 
 //Cross Product

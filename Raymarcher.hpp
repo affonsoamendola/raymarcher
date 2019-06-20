@@ -1,5 +1,7 @@
 #pragma once
 
+#include "math.h"
+
 #include "Engine_System.hpp"
 #include "Vector.hpp"
 
@@ -10,9 +12,12 @@ private:
 	double m_screen_plate_width = 3.2;
 	double m_screen_plate_height = 2.4;
 
-	double m_camera_focus_point = -2.2;
 	double m_z_hither = 0.1;
 	double m_z_yon = 10.0;
+
+	double m_hor_fov = 3.14156/4.;
+
+	double m_camera_focus_point = -(1.6 / tan(m_hor_fov));
 
 	const int MAX_MARCHES = 3;
 
